@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Previsão do Tempo</h1>
+            <p>Veja a previsão do tempo de sua cidade em tempo real</p>
+        </header>
+        
+        <main>
+            <div id="input">
+                <label for="cidade">Digite o nome da cidade:</label>
+                <input type="text" id="cidade" placeholder="Ex: Rio de Janeiro">
+                <button onclick="obterPrevisao()">Ver Previsão</button>
+            </div>
+            
+            <div id="previsao">
+                <h2>Previsão para <span id="nome-cidade">...</span></h2>
+                <p id="temperatura">Temperatura: ...°C</p>
+                <p id="sensacao">Sensação Térmica: ...°C</p>
+                <p id="chuva">Chance de Chuva: ...%</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Previsão do Tempo | Feito por David</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
